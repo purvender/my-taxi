@@ -1,13 +1,14 @@
 **mytaxi backend Applicant Service**<br />
-
+<pre>
 **Run mongodb in docker with provided docker-compose.yaml (docker compose up)**<br />
 username=rootuser<br />
 password=rootpass<br />
 database=purvender<br />
 port=27017<br />
-
+</pre>
 Initial data is feeded with commandLineRunner in MytaxiServerApplicantTestApplication<br />
 
+<pre>
 2 cars: <br />
 3 drivers: 2 online, 1 offline: drivers username and password will be used to sign in from spring security: use any:<br />
 ex: username: driver01<br />
@@ -18,7 +19,7 @@ CarDO("XYAB0088", 4, 0, 5, "petrol", "black", "Sedan", "Audi2", "A7", "auto"));<
 DriverDO("driver04pw", "driver04",false, OnlineStatus.OFFLINE, "auto"));<br />
 DriverDO("driver01", "driver01pw",false, OnlineStatus.ONLINE, "auto"));<br />
 DriverDO("driver02", "driver02pw",true, OnlineStatus.ONLINE, "manual"));<br />
-
+</pre>
 
 Execute com.mytaxi.MytaxiServerApplicantTestApplication, which starts a webserver on port 8080 (http://localhost:8080) and serves SwaggerUI where can inspect and try existing endpoints.<br />
 
