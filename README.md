@@ -6,6 +6,8 @@ password=rootpass<br />
 database=purvender<br />
 port=27017<br />
 </pre>
+**Mongo express dashboard for mongo db will be accessed at localhost:8081 (deployed in docker-compose.yaml with mongo db)**
+
 Initial data is feeded with commandLineRunner in MytaxiServerApplicantTestApplication<br />
 
 <pre>
